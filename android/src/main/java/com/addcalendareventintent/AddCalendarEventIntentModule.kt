@@ -19,14 +19,6 @@ class AddCalendarEventIntentModule(private val reactContext: ReactApplicationCon
     return NAME
   }
 
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
-  @ReactMethod
-  fun multiply(a: Double, b: Double, promise: Promise) {
-    promise.resolve(a * b)
-  }
-
-
   @ReactMethod
   fun addCalendarEventIntent(event: ReadableMap, promise: Promise) {
     try {

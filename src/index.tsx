@@ -17,10 +17,6 @@ const AddCalendarEventIntent = NativeModules.AddCalendarEventIntent
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return AddCalendarEventIntent.multiply(a, b);
-}
-
 interface AddCalendarEventIntent {
   title?: string;
   description?: string;

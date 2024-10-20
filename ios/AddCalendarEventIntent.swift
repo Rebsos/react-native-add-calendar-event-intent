@@ -5,11 +5,6 @@ import EventKitUI
 @objc(AddCalendarEventIntent)
 class AddCalendarEventIntent: NSObject, EKEventEditViewDelegate {
 
-  @objc(multiply:withB:withResolver:withRejecter:)
-  func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
-    resolve(a*b)
-  }
-
   @objc
   func addCalendarEventIntent(
     _ event: NSDictionary,
