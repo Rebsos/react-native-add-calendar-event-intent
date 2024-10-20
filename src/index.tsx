@@ -20,3 +20,20 @@ const AddCalendarEventIntent = NativeModules.AddCalendarEventIntent
 export function multiply(a: number, b: number): Promise<number> {
   return AddCalendarEventIntent.multiply(a, b);
 }
+
+interface AddCalendarEventIntent {
+  title?: string;
+  description?: string;
+  location?: string;
+  startAt?: number;
+  endAt?: number;
+  allDay?: boolean;
+  id?: number;
+  recurrenceRule?: string; // This is a specification, see https://tools.ietf.org/html/rfc5545#section-3.3.10 Example: 'FREQ=DAILY;COUNT=3'
+}
+
+export function addCalendarEventIntent(
+  addCalendarEvent: AddCalendarEventIntent
+): Promise<void> {
+  return AddCalendarEventIntent.addCalendarEventIntent(addCalendarEvent);
+}
