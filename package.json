@@ -1,6 +1,6 @@
 {
   "name": "react-native-add-calendar-event-intent",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Add an event to the user's calendar using an intent.",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
